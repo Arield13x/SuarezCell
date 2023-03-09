@@ -1,3 +1,5 @@
+
+/*seccion header y nav*/
 *{
     box-sizing: border-box;
 }
@@ -6,7 +8,7 @@ header{
     display: flex;
     min-height: 70px;
     justify-content: space-between;
-    background-color: rgba(66, 211, 216, 0.178);
+    background-color:transparent;
     align-items: center;
     padding: 10px;
     border: 10px;
@@ -52,4 +54,46 @@ nav a:hover{
         padding: 10px;
         align-items: center;
     }
+}
+
+/*seccion formulario*/
+
+.form-presupuestos{
+    width: 600px;
+    background-color: rgba(185, 240, 241, 0.178);
+    padding: 30px;
+    margin: auto;
+    margin-top: 0;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    color: black;
+    align-items: center;
+}
+.form-presupuestos h4{
+    font-family: 'Roboto' sans-serif;
+    font-size: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.controls {
+    width: 500px;
+    background: rgba(146, 238, 177, 0.178);
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    border: 1px solid rgb(1, 26, 11);
+    font-size: 20px;
+    text-align: center;      
+}
+.boton{
+    height: 35px;
+    margin-bottom: 4px;
+    margin-top: 10px;
+    max-width: 300px;
+    margin-left: 220px;
+    margin-right: 220px;
+    font-family: 'Roboto' sans-serif;
 }

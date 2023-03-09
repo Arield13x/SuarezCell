@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="estilo.css" rel="stylesheet" href="">>
+    <link rel="stylesheet" href="estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>SuarezCell</title>
-</head>
 
+    <title>Presupuestos</title>
+</head>
 <body>
     <header>
         <a href="#" class="logo">
@@ -24,20 +24,17 @@
             <a href="presupuestos.html" class="nav-link">Presupuestos</a>
         </nav>
     </header>
-        <nav>
-             <div>
-               <h2>Inicio</h2>
-             </div>
-
-            <div>
-               <h2>Sobre Nosotros</h2>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolorem labore facilis natus totam eius pariatur. Est cumque deserunt culpa quam soluta magnam eveniet distinctio omnis quia, eligendi animi ducimus!</p>
-
-            </div>
-        </nav>
-
-
+<form action="" method="post">
+    <section class="form-presupuestos">
+        <h4>Formulario para consultas y presupuesto</h4>
+        <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre"required> 
+        <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+        <input class="controls" type="email" name="e-mail" id="e-mail" placeholder="Ingrese su correo">
+        <input class="controls" type="tel" name="telefono" id="telefono" placeholder="Ingrese su telefono" required> 
+        <input class="controls" type="text" name="consulta" id="consulta" placeholder="Ingrese su consulta"required>
+        <input class="boton" type="submit" value="Pedir Presupuesto">
+    </section>
+</form>
     
-   
 </body>
 </html>
