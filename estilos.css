@@ -20,6 +20,7 @@ header{
     top: 0;
     left: 0;
     background-color: transparent;   
+    z-index: 1;
 }
 
 /*seccion header encabezado */
@@ -47,6 +48,7 @@ padding: 20px;
     color: rgb(248, 140, 40);
     font-style: italic;
     padding: 10px;
+    text-shadow: 1px 1px 1px black;
 }
 
 /*--barra menu*/
@@ -109,7 +111,62 @@ nav > ul > li > a:hover{
     display: none;
 }
 
+/*Seccion formulario en Presupuesto*/
+
+.formulario-consulta {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:transparent;
+    border-radius: 5px;
+  }
+  
+ .formulario-consulta form{
+    margin-top: 210px;
+ }
+  
+  .formulario-consulta div {
+    margin-bottom: 20px;
+  }
+  
+  .formulario-consulta label {
+    display: block;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  .formulario-consulta input,
+  .formulario-consulta textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+  }
+  
+  .formulario-consulta input[type="submit"] {
+    background-color: rgb(248, 140, 40);
+    color: #f89513c7;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .formulario-consulta input[type="submit"]:hover {
+    background-color: #f1540b;
+  }
+  
+
+
 @media screen and (max-width: 720px) {
+
+    body{
+        background-image: url(fondo3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     .header__superior{
         padding: 10px;
@@ -132,7 +189,6 @@ nav > ul > li > a:hover{
         width: 100%;
         height: 0px;
         transition: all 300ms ease;
-        z-index: 100;
         opacity: 0;
         visibility: hidden;
     }
@@ -159,4 +215,20 @@ nav > ul > li > a:hover{
         font-size: 50px;
         padding-top: 10px;
       }
+
+    .formulario-consulta form{
+        margin-top: 160px;
+    }   
+      
+
+    .formulario-consulta div{
+        align-items: center center;    
+    }
+
+    .formulario-consulta label{
+        align-items: center;
+        text-align: center;
+        color: white;
+        text-shadow: #f1540b 1px;
+    }
 }
