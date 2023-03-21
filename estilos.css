@@ -29,12 +29,14 @@ header{
 /*seccion header encabezado */
 
 .header__superior{
-max-width: 1200px;
-margin: auto;
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 20px;
+    background-image: url(fondo2.jpg);
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 30px 0 30px;
 }
 
 .logo{
@@ -46,12 +48,26 @@ padding: 20px;
     width: 100px;
 }
 
+.icon{
+  display: flex;
+  color: rgb(248, 140, 40);
+  font-size: 80px;
+  justify-content: space-around;  
+}
+
+.fa-brands, .fab {
+    font-weight: 400;
+    padding: 30px;
+    text-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
 .subtitulo{
     font-size: 20px;
     color: rgb(248, 140, 40);
     font-style: italic;
     padding: 10px;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 0 0 10px white;
+    margin-right: 40px;
 }
 
 /*--barra menu*/
@@ -94,25 +110,22 @@ nav > ul > li > a:hover{
     border-radius: 4px;
 }
 
-/*Seccion responsive*/
+  /*SECCION INICIO*/
 
-.icon__menu{
-    font-size: 26px;
-    color: white;
-    cursor: pointer;
-    width: 26px;
-    height: 100%;
-    display: none;
-    align-items: center;
-}
-#label__check{
-    width: 26px;
-    height: 100%;
-    display: none;
-}
-#check__menu{
-    display: none;
-}
+  .inicio{
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 30px;
+    display:flex;
+  }
+
+  .inicio p{
+    color: black;
+    font-size: 17px;
+    text-shadow:white 1px 1px;
+    text-align: left;
+    width: 600px;
+  }
 
 /*Seccion formulario en Presupuesto*/
 
@@ -125,7 +138,7 @@ nav > ul > li > a:hover{
   }
   
  .formulario-consulta form{
-    margin-top: 210px;
+    margin-top: 10px;
  }
   
   .formulario-consulta div {
@@ -159,36 +172,89 @@ nav > ul > li > a:hover{
   .formulario-consulta input[type="submit"]:hover {
     background-color: #f1540b;
   }
+
+  /*SECCION SERVICIO*/
   
-  /*SECCION INICIO*/
-
-  .inicio{
-    margin-top: 220px;
-    margin-left: 100px;
-    margin-right: 100px;
-    display: block;
-    
-  }
-
-  .inicio p{
-    color: black;
-    font-size: 15px;
-    text-shadow:white 1px 1px;
+.trabajando h1{
+    color: rgb(248, 140, 40);
     text-align: center;
-    
-  }
+    margin-top: 50px;
+}
 
+/*.icon_trabajo{
+    color: rgb(248, 140, 40);
+    text-align: center;
+    font-size: 50px;
+
+}*/
+
+/*SECCION NOSOTROS*/
+
+.contenedor{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.nosotros p{
+    display: flex;
+    text-align: center;
+    line-height: 1.8;
+    text-shadow: white 1px 0 1px;
+    width: 600px;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+.foto img{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+
+/*Seccion responsive*/
+
+.icon__menu{
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+#label__check{
+    width: 26px;
+    height: 100%;
+    display: none;
+}
+#check__menu{
+    display: none;
+}
 
 @media screen and (max-width: 720px) {
 
     body{
-        background-image: url(fondo3.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-color: #dadada;
+    }
+    .icon{
+        display: none;
     }
 
     .header__superior{
-        padding: 10px;
+        background-size: cover;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .contenedor__menu{
+        width: 100%;
+        margin: auto;
+        display: flex;
     }
 
     .logo img {
@@ -236,7 +302,7 @@ nav > ul > li > a:hover{
       }
 
     .formulario-consulta form{
-        margin-top: 160px;
+        margin-top: 10px;
     }   
       
 
@@ -249,5 +315,29 @@ nav > ul > li > a:hover{
         text-align: center;
         color: white;
         text-shadow: #f1540b 1px;
+    }
+
+    .inicio p{
+        text-align: center;
+    }
+    .contenedor{
+        position: relative;
+    }
+
+    .contenedor img{
+        margin: auto;
+        width: 100%;
+        display:block;
+        opacity: 0.5;
+    }
+  
+    .contenedor p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        text-align: center;
+        color:rgb(248, 140, 40);
     }
 }
