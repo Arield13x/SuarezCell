@@ -8,11 +8,6 @@
     text-decoration: none;
 }
 
-/*body{
-    background-image: url(fondo2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}*/
 body{
     background-color: rgb(212, 212, 212);
 }
@@ -110,6 +105,11 @@ nav > ul > li > a:hover{
     border-radius: 4px;
 }
 
+nav > ul > li > a:active {
+    background-color: #333;
+    color: #fff;
+  }
+  
   /*SECCION INICIO*/
 
   .inicio{
@@ -212,8 +212,36 @@ nav > ul > li > a:hover{
     margin-left: 50px;
 }
 
+/*SECCION CONTACTO*/
+
+.redes i{
+  font-size: 70px;
+  color: rgb(248, 140, 40);
+  padding-top: 100px;
+  padding: 80px 50px 0 50px;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+}
+
+.mensaje h1{
+    padding: 20px;
+   text-align: center;
+   color: rgb(248, 140, 40);
+   text-transform: uppercase;
+   tex
+}
 
 /*Seccion responsive*/
+
+.icon_trabajo i{
+    display: flex;
+    color: rgb(248, 140, 40);
+    font-size: 50px;
+    justify-content: center;
+    padding-top: 15px;
+}
 
 .icon__menu{
     font-size: 26px;
@@ -340,4 +368,6 @@ nav > ul > li > a:hover{
         text-align: center;
         color:rgb(248, 140, 40);
     }
+
+    
 }
